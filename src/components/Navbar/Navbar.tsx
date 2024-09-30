@@ -21,7 +21,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="w-4/5 md:w-[90%] p-1 md:p-3 mt-1 flex gap-4 items-center m-auto text-lg">
+    <div className="w-4/5 md:w-full p-1 md:p-3 mt-1 flex gap-4 items-center m-auto text-lg">
       <div className="flex items-center gap-4 w-1/2 h-full md:w-4/5">
         <div className="md:hidden">
           <FaBars/>
@@ -40,7 +40,7 @@ const Navbar = () => {
           <p>Login</p>
           <p style={{rotate: arrow ? "180deg": "0deg", transitionDuration: "0.3s"}} className="transition-all"><MdKeyboardArrowDown/></p>
         </div>
-        <div className='flex items-center gap-1 '>
+        <div className='flex items-center gap-1 '>  
           <span className="text-2xl"><IoCartOutline/></span>
           <p className="hidden md:block">Cart</p>
         </div>

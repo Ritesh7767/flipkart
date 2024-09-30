@@ -13,7 +13,7 @@ const FeaturedBrand = () => {
 
   return (
     <div className='p-1'>
-      <h2 className='font-semibold text-xl mb-6 ml-5'>Featured Brand</h2>
+      <h2 className='font-semibold text-xl mb-6 ml-5 mt-3'>Featured Brand</h2>
       <div className='relative overflow-hidden h-[42vh]'>
         {
           featured?.map((ele, i) => (

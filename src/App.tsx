@@ -1,10 +1,11 @@
 import './App.css'
-import Home from './Home'
+import ProductPage from './pages/ProductPage'
+import Routing from './Routers/Routing'
 
 function App() {
 
   return (
-    <Home/>
+     <Routing/>
   )
 }
 

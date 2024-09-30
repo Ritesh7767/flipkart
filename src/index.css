@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 * {
-    padding: 1px;
     background-color: white;
     font-family: sans-serif;
     user-select: none;
+    box-sizing: border-box;
 }

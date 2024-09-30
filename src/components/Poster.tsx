@@ -11,11 +11,12 @@ const Poster = () => {
       setTranslate(prev => prev + num)
     }
 
+    console.log(poster)
   return (
-    <div className='border border-black relative overflow-hidden min-h-28 max-h-52 h-52'>
+    <div className='relative overflow-hidden min-h-28 max-h-52 h-52'>
         {
           poster?.map((ele,i: number) => (
-            <img key={i} src={ele.image} className='absolute w-full h-full object-cover' style={{left: `${i*100}%`, transform: `translateX(${translate * 100}%)`, transition: "transform 0.4s ease-in-out"}}/>
+            <img key={i} src={ele.image} className='absolute w-full h-full object-cover' style={{left: `${i*100}%`, transform: `translateX(${translate * 100}%)`, transition: "transform 0.7s ease-in-out"}}/>
           ))
         }
         {translate && <Leftbutton func={handleClick} argument={1}/>}
